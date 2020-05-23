@@ -199,6 +199,7 @@ export default {
     saveDiagram(done) {
       console.info("获取到的数据");
       console.info(done);
+      console.info("33333");
       // 把传入的done再传给bpmn原型的saveXML函数调用
       this.bpmnModeler.saveXML({ format: true }, function(err, xml) {
         done(err, xml);
